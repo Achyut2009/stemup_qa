@@ -1,20 +1,17 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import type { Metadata } from 'next';
+import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'StemUp | Empowering Through Education',
   description: 'StemUp is dedicated to advancing STEM education and creating opportunities for the next generation of innovators.',
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -26,5 +23,5 @@ export default function RootLayout({
         </div>
       </body>
     </html>
-  )
+  );
 }

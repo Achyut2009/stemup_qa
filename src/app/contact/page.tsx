@@ -52,7 +52,7 @@ export default function Contact() {
                 transition={{ duration: 0.5 }}
                 className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 md:p-12"
               >
-                <h1 className="text-4xl font-bold text-white mb-6">Get in Touch</h1>
+                <h1 className="text-4xl font-bold text-white mb-6">Let&apos;s get in touch</h1>
                 <p className="text-gray-200 mb-8">
                   Have questions about StemUp? We'd love to hear from you. Send us a message or connect with us on social media.
                 </p>

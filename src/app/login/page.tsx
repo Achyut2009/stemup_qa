@@ -170,7 +170,7 @@ const LoginPage = () => {
                     transition={{ delay: 0.4 }}
                     className="mt-6 text-center text-sm text-gray-400"
                 >
-                    Don't have an account?{' '}
+                    Don&apos;t have an account?{' '}
                     <Link href="/signup" className="text-cyan-400 hover:text-cyan-300 transition-colors hover:underline">
                         Sign up
                     </Link>

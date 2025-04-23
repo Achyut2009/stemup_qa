@@ -85,7 +85,7 @@ export default function SignUpPage() {
       let data;
       try {
         data = await res.json();
-      } catch (e) {
+      } catch (error) {
         console.error('Response parsing error:', await res.text());
         throw new Error('Server error: Invalid response format');
       }
@@ -96,9 +96,9 @@ export default function SignUpPage() {
       
       console.log('Signup successful:', data);
       router.push('/login');
-    } catch (err: any) {
-      console.error('Signup error:', err);
-      setError(err.message || 'An error occurred during signup');
+    } catch (error: Error) {
+      console.error('Signup error:', error);
+      setError(error.message || 'An error occurred during signup');
     } finally {
       setIsSubmitting(false);
     }
