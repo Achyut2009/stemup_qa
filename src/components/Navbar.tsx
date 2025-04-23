@@ -2,8 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import { FaBars } from 'react-icons/fa';
 import Sidebar from '../components/Sidebar';
 
 export default function Navbar() {

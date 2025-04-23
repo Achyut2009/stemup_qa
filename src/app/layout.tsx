@@ -1,7 +1,12 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
   title: 'StemUp | Empowering Through Education',
@@ -14,13 +19,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="min-h-screen bg-gradient-to-br from-cyan-800 to-teal-600 flex flex-col">
-          <div className="flex-grow">
-            {children}
-          </div>
-        </div>
+    <html lang="en" className={inter.variable}>
+      <body className="font-sans">
+        {children}
       </body>
     </html>
   );

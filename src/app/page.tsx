@@ -9,7 +9,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export default function Home() {
-  const [_screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+  const [, setScreenWidth] = useState(0);
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
